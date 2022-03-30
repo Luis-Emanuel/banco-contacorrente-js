@@ -1,0 +1,20 @@
+{
+  "name": "bytebank",
+  "version": "1.0.0",
+  "description": "Projeto do bytebank para seus clientes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Luis-Emanuel/banco-contacorrente-js.git"
+  },
+  "author": "Luis Emanuel",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Luis-Emanuel/banco-contacorrente-js/issues"
+  },
+  "homepage": "https://github.com/Luis-Emanuel/banco-contacorrente-js#readme"
+}
