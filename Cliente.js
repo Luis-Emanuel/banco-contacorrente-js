@@ -1,16 +1,12 @@
-export class Cliente{
-// ATRIBUTOS 
-    nome;
-    #cpf;  
-
+export class Cliente{ 
 //ACESSORES
     get cpf(){
-       return this.#cpf;
+       return this._cpf;
     }
 
 //CONSTRUTOR
     constructor(nome, cpf){
         this.nome = nome;
-        this.#cpf = cpf
+        this._cpf = cpf
     }
 };
