@@ -7,10 +7,12 @@ export class Funcionarios {
         this._bonificacao = 1;
         this._senha;
     }
-    get senha(){
-        return this._senha;
+
+    autenticar(senha){
+       return this._senha == senha;
     }
-    cadastro(senha){
+
+    cadastrarSenha(senha){
         this._senha = senha;
     }
 }
