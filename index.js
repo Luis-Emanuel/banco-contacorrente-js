@@ -1,6 +1,5 @@
 import { Cliente } from "./Cliente.js";
 import { Diretor } from "./Funcionarios/Diretor.js";
-import { Funcionarios } from "./Funcionarios/Funcionarios.js";
 import { Gerente } from "./Funcionarios/Gerente.js";
 import { SistemaDeAutentificacao } from "./SistemaDeAutentificacao.js";
 //FUNCIONARIOS
