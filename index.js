@@ -1,21 +1,21 @@
 import { Cliente } from "./Cliente.js";
-import { Diretor } from "./Funcionarios/Diretor.js";
-import { Gerente } from "./Funcionarios/Gerente.js";
-import { SistemaDeAutentificacao } from "./SistemaDeAutentificacao.js";
-//FUNCIONARIOS
-const diretor = new Diretor("Lucas", 27398492722, 10000);
-const gerente = new Gerente("Alfredo", 27398499922, 5000);
+import { ContaCorrente } from "./ContaCcorrete.js";
+//-------------CLIENTE 1------------------
+const contaCorrenteEmanuel = new ContaCorrente(); 
+contaCorrenteEmanuel.cliente = new Cliente();
+contaCorrenteEmanuel.cliente.nome = "Emanuel";
+contaCorrenteEmanuel.cliente.cpf = 11122233309;
+contaCorrenteEmanuel.agencia = 1001;
+//-------------CLIENTE 2------------------
+const contaCorrenteLeandra = new ContaCorrente();
+contaCorrenteLeandra.cliente = new Cliente();
+contaCorrenteLeandra.cliente.nome = "Leandra";
+contaCorrenteLeandra.cliente.cpf = 44455566609;
+contaCorrenteLeandra.agencia = 1002;
+//-------------OPERAÇÕES------------------
+contaCorrenteEmanuel.despositar(500);
+contaCorrenteEmanuel.transferir(100, contaCorrenteLeandra)
 
-//CLIENTE
-const cliente = new Cliente("Lais", 27398492111, 789)
-//CADASTRO
-gerente.cadastrarSenha(123)
-diretor.cadastrarSenha(456)
-//LOGIN
-const gerenteEstaLogado = SistemaDeAutentificacao.login(gerente, 123);
-const diretorEstaLogado = SistemaDeAutentificacao.login(diretor, 456);
-const clienteEstaLogado = SistemaDeAutentificacao.login(cliente, 789);
 
-console.log(gerenteEstaLogado);
-console.log(diretorEstaLogado);
-console.log(clienteEstaLogado);
+console.log(contaCorrenteEmanuel);
+console.log(contaCorrenteLeandra);
