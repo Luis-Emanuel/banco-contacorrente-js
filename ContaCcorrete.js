@@ -1,11 +1,8 @@
 import { Cliente } from "./Cliente.js";
 
 export class ContaCorrente{
-    //ATRIBUTOS STATICO
+    //ATRIBUTOS
     static numeroDeContas = 0;
-    //ATRIBUTOS PUBLICOS
-    agencia;
-    //TRIBUTOS PRIVADOS
     #cliente;
     #saldo = 0;
     //ACESSORES
