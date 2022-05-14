@@ -1,10 +1,8 @@
-export class ContaPoupaca{
-    #cliente;
-    #saldoInicial;
-    #agencia;
-    constructor(cliente, saldoInicial, agencia){
-        this.#cliente = cliente;
-        this.#saldoInicial = saldoInicial;
-        this.#agencia = agencia;
+import { Conta } from "./Conta.js";
+
+export class ContaPoupaca extends Conta{
+    constructor(agencia, cliente, saldoInicial){
+        super(agencia, cliente, saldoInicial)
     }
+   
 }
