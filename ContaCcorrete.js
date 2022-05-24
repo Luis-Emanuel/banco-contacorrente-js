@@ -8,4 +8,8 @@ export class ContaCorrente extends Conta{
         super(agencia, cliente, 0)
         ContaCorrente.numeroDeContas += 1;
     };
+    sacar(valor){
+       let taxa = 1.1;
+       return this._sacar(taxa, valor);
+    };
 };
